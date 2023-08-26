@@ -64,17 +64,33 @@ body {
 
 }
 
-.tausta{
-background-color: grey;
-height: 1000px;
-width:  100%;
-}
-.pic_ravintola{
+.container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  background-image: url("kuvat/pizza-seamless-pattern_373337-10.avif");
+  background-size: 400px;
+ }
+ 
+ img {
+  max-width: 500px;
+  max-height: auto;
+  border-radius: 30px;
+ }
 
+.image{
+  margin: 10% 15% 15% 10%;
 }
+ 
+.text{
+  margin-left: 150px;
+}
+
 
 #buffer{
 background-color: bisque;
 height: 200px;
 width:  auto;
 }
+
