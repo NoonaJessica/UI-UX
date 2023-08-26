@@ -59,8 +59,9 @@ body {
 
 .filleri{
     background-color: whitesmoke;
-    height: 500px;
+    height: 700px;
     width:  100%;
+    background-image: url("kuvat/pizza-ingredients-background-linear-graphic-tomato-garlic-basil-olive-pepper-mushroom-leaf-seamless-pattern_84749-2057.avif");
 
 }
 
@@ -71,6 +72,7 @@ body {
   column-gap: 5px;
   background-image: url("kuvat/pizza-seamless-pattern_373337-10.avif");
   background-size: 400px;
+  
  }
  
  img {
@@ -89,8 +91,9 @@ body {
 
 
 #buffer{
-background-color: bisque;
-height: 200px;
-width:  auto;
+background-color:grey;
+height: 100px;
+width:  100%;
+
 }
 
