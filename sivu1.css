@@ -71,7 +71,7 @@ body {
   align-items: center; 
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5px;
-  background-image: url("kuvat/pizza-seamless-pattern_373337-10.avif");
+  background-image: url("kuvat/output-onlinepngtools.png");
   background-size: 400px;
   
  }
@@ -80,6 +80,7 @@ body {
   max-width: 500px;
   max-height: auto;
   border-radius: 30px;
+  
  }
 
 .reuna{
@@ -96,9 +97,14 @@ body {
 }
 
 
+
+
 .tomato{
   height: auto;
-  width: 100%;
+  width: 16%;
+  position: absolute;
+  right: 360px;
+  top: 270px;
 
 
 }
