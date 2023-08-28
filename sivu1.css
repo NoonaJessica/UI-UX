@@ -58,11 +58,12 @@ body {
 }
 
 .filleri{
-    background-color: whitesmoke;
-    height: 700px;
+    margin-top: 100px;
+    background-color: white;
+    height: 300px;
     width:  100%;
-    background-image: url("kuvat/pizza-ingredients-background-linear-graphic-tomato-garlic-basil-olive-pepper-mushroom-leaf-seamless-pattern_84749-2057.avif");
-
+    /*background-image: url("kuvat/pizza-ingredients-background-linear-graphic-tomato-garlic-basil-olive-pepper-mushroom-leaf-seamless-pattern_84749-2057.avif");
+*/
 }
 
 .container {
@@ -81,12 +82,25 @@ body {
   border-radius: 30px;
  }
 
+.reuna{
+
+}
+
 .image{
   margin: 10% 15% 15% 10%;
 }
  
 .text{
   margin-left: 150px;
+  width: 400px;
+}
+
+
+.tomato{
+  height: auto;
+  width: 100%;
+
+
 }
 
 
@@ -96,4 +110,5 @@ height: 100px;
 width:  100%;
 
 }
+
 
