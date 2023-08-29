@@ -3,7 +3,7 @@
 body { 
   margin-left: 15%;
   margin-right: 15%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
 }
 
 .header {
@@ -33,7 +33,7 @@ body {
 }
 
 #pitsa{
-  width: 100px;
+  width: 110px;
   height: auto;
 }
 
@@ -41,21 +41,6 @@ body {
   
   color: #7F7F7F;
 
-}
-
-.header a:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  display: block;
-  transition: all 0.3s ease;
-  bottom: 60px;
-}
-.header a:hover::after {
-  width: 80px;
-  height: 2px;
-  background-color: #fff;
 }
 
 .header a.active {
@@ -107,9 +92,6 @@ body {
   
  }
 
-.reuna{
-
-}
 
 .image{
   margin: 10% 15% 15% 10%;
