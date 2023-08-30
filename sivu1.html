@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="sivu1.css">
+    <script src="sivu1.js" defer></script>
+    
 </head>
 <body>
     <div class="header">
-        <a href="#default"  > <img id="pitsa" src="kuvat/logo.png" alt=""></a>
+        <a href="#default"  > <img id="pitsa" src="kuvat/logo-removebg-preview.png" alt="logo"></a>
         <div class="header-right">
 
 
@@ -19,12 +21,27 @@
       </div>
     <main class="filleri">
       <p> Tänne lisätään sisältöä seuraavina viikkoina</p>
+      <button id="open_dialog">Open Dialog</button>
+
+      <dialog open aria-labelledby="dialog_title" aria-describedby="dialog_description">
+        <img src="https://native-dialog.surge.sh/location-service.svg" alt="Illustration of Location Services" />
+        <h2 id="dialog_title" class="h2">Use location services?</h2>
+        <p id="dialog_description">
+          In order to give directional instructions, we kindly ask you to turn
+          on the location services.
+        </p>
+        <div class="flex flex-space-between">
+          <button id="close_dialog">Close</button>
+          <button id="confirm_dialog" class="cta">Confirm</button>
+        </div>
+      </dialog>
+    
     </main>
     
 
     <div class="container">
       <div class="image">
-        <img src="kuvat/shawnanggg-nmpW_WwwVSc-unsplash.jpg">
+        <img id="ravintola" src="kuvat/shawnanggg-nmpW_WwwVSc-unsplash.jpg">
       </div>
       <div class="text">
         <h1>LISÄÄ MEISTÄ.</h1>
