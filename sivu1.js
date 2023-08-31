@@ -10,7 +10,7 @@ const elements = dialog.querySelectorAll(
 const firstElement = elements[0];
 const lastElement = elements[elements.length - 1];
 
-const trapFocus = (e) => {
+/*const trapFocus = (e) => {
   if (e.key === "Tab") {
     const tabForwards = !e.shiftKey && document.activeElement === lastElement;
     const tabBackwards = e.shiftKey && document.activeElement === firstElement;
@@ -26,6 +26,7 @@ const trapFocus = (e) => {
     }
   }
 };
+*/
 
 const openDialog = () => {
   dialog.showModal();
