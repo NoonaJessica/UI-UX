@@ -155,11 +155,11 @@ width:  100%;
 
 
 /* Formi */
-form.form-example {
+form.form-sub {
   display: table;
 }
 
-div.form-example {
+div.form-sub {
   display: table-row;
 }
 
@@ -171,4 +171,18 @@ input {
 
 label {
   padding-right: 10px;
+}
+.form-sub input{
+  margin: 10px;
+  padding: 5px;
+
+}
+.form-sub input:invalid{
+  background-color: red;
+  opacity: 60%;
+}
+
+.form-sub input:valid{
+  background-color: green;
+  opacity: 60%;
 }

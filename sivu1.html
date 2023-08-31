@@ -27,22 +27,25 @@
     <!--Dialog-->
       <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
         <img src="https://native-dialog.surge.sh/location-service.svg" alt="Illustration of Location Services" />
-        <h2 id="dialog_title" class="h2">Use location services?</h2>
+        <h2 id="dialog_title" class="h2">Rekistöröi käyttäjä</h2>
+        <P>Minimi 3 merkkiä</P>
         
         <!--form-->
-        <form action="" method="get" class="form-example">
-          <div class="form-example">
-            <label for="name">Enter your name: </label>
-            <input type="text" name="name" id="name" autocomplete="name" required />
+        <form action="" method="get" class="form-sub">
+          <div class="form-sub">
+            <label for="name">Käyttäjä nimi: </label>
+            <input type="text" name="name" id="name" autocomplete="name" required minlength="3" />
           </div>
-          <div class="form-example">
-            <label for="email">Enter your email: </label>
-            <input type="email" name="email" id="email" required  autocomplete="email"/>
+          <div class="form-sub">
+            <label for="email">Sähköposti: </label>
+            <input type="email" name="email" id="email" required  autocomplete="email" minlength="3"/>
           </div>
-          <div class="form-example">
-            <label for="password">Enter your password: </label>
-            <input type="password" name="password" id="password" required />
+          <div class="form-sub">
+            <label for="password">Salasana: </label>
+            <input type="password" name="password" id="password" required  minlength="3"/>
           </div>
+          <input type="submit" value="lähetä!!">
+
           <!--
           <div class="form-example">
             <input type="submit" value="Subscribe!" />
