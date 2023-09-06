@@ -26,7 +26,7 @@
       
     <!--Dialog-->
       <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
-        <img src="https://native-dialog.surge.sh/location-service.svg" alt="Illustration of Location Services" />
+        <img src="kuvat/logo-removebg-preview.png" alt="Illustration of Location Services" />
         <h2 id="dialog_title" class="h2">Rekistöröi käyttäjä</h2>
         <P>Minimi 3 merkkiä</P>
         
@@ -34,17 +34,34 @@
         <form action="" method="get" class="form-sub">
           <div class="form-sub">
             <label for="name">Käyttäjä nimi: </label>
-            <input type="text" name="name" id="name" autocomplete="name" required minlength="3" />
+            <input 
+            type="text" 
+            name="name" id="name" 
+            autocomplete="name" 
+            required minlength="3" 
+            />
           </div>
           <div class="form-sub">
             <label for="email">Sähköposti: </label>
-            <input type="email" name="email" id="email" required  autocomplete="email" minlength="3"/>
+            <input 
+            type="email" 
+            name="email" 
+            pattern=".+@metropolia.fi"
+            id="email" required  
+            autocomplete="email" 
+            required minlength="3"/>
           </div>
           <div class="form-sub">
             <label for="password">Salasana: </label>
-            <input type="password" name="password" id="password" required  minlength="3"/>
+            <input 
+            type="password" 
+            name="password" 
+            id="password" required  
+            required minlength="3"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}"
+            />
           </div>
-          <input type="submit" value="lähetä!!">
+      
 
           <!--
           <div class="form-example">
@@ -54,8 +71,8 @@
         <!--form-->
 
         <div class="flex flex-space-between">
-          <button id="close_dialog">Close</button>
-          <button id="confirm_dialog" class="cta" > Confirm</button>
+          <button id="close_dialog">Sulje</button>
+          <button type="submit" value="lähetä! id="confirm_dialog" class="cta" >Vahvista</button>
         </div>
       </dialog>
     <!--Dialog-->
