@@ -15,7 +15,9 @@
   --leading: 0.025em;
 }
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 body { 
   margin-left: 15%;
@@ -25,6 +27,7 @@ body {
  
 
 }
+
 
 body:has(dialog[open]) {
   overflow-y: hidden;
@@ -97,12 +100,12 @@ dialog::backdrop{
 }
 
 .filleri{
-    margin-top: 200px;
+    margin-top: 150px;
     background-color: white;
-    height: 300px;
+    height: auto;
     width:  100%;
-    /*background-image: url("kuvat/pizza-ingredients-background-linear-graphic-tomato-garlic-basil-olive-pepper-mushroom-leaf-seamless-pattern_84749-2057.avif");
-*/
+   
+
 }
 
 .container {
@@ -115,13 +118,20 @@ dialog::backdrop{
   
  }
  
- img {
-  max-width: 500px;
-  max-height: auto;
+ #ravintola {
+  width: 500px;
+  height: auto;
   border-radius: 30px;
   
  }
 
+ #isopizza{
+  max-width: 100%;
+  max-height: auto;
+  object-fit: contain;
+  border-bottom: 10%;
+
+ }
 
 .image{
   margin: 10% 15% 15% 10%;
@@ -137,7 +147,7 @@ dialog::backdrop{
   width: 200px;
   position: absolute;
   right: 370px;
-  top: 400px;
+  top: 1000px;
 
 
 }

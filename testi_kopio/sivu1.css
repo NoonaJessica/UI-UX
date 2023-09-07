@@ -1,0 +1,202 @@
+:root{
+  --raw-umber: #9C684Aff;
+  --copper: #BF7946ff;
+  --gunmetal: #232B2Cff;
+  --champagne-pink: #DAC9C1ff;
+  --dark-slate-gray: #275B62ff;
+  
+}
+:root {
+  --ratio: 3.74;
+  --cta-color: rgb(0, 102, 254);
+  --light-color-bg: rgb(238, 241, 247);
+  --dark-color-bg: rgb(55, 65, 81);
+  --grey-color: rgb(107, 114, 128);
+  --leading: 0.025em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  background-color: white;
+ 
+
+}
+
+
+body:has(dialog[open]) {
+  overflow-y: hidden;
+}
+
+dialog::backdrop{
+  background-color: #232B2Cff;
+  opacity: 60%;
+
+}
+
+.header {
+  overflow: hidden;
+  background-color: var(--copper);
+  padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  width: 70%;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px; 
+  line-height: 25px;
+  border-radius: 2px;
+  margin-right:5px ;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#pitsa{
+  width: 110px;
+  height: auto;
+}
+
+.header a:hover {
+  
+  color: #7F7F7F;
+
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  margin-top: 30px;
+  margin-left: 20px;
+  float:inline-start;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.filleri{
+    margin-top: 200px;
+    background-color: white;
+    height: 300px;
+    width:  100%;
+    /*background-image: url("kuvat/pizza-ingredients-background-linear-graphic-tomato-garlic-basil-olive-pepper-mushroom-leaf-seamless-pattern_84749-2057.avif");
+*/
+}
+
+.container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  background-image: url("kuvat/output-onlinepngtools.png");
+  background-size: 400px;
+  
+ }
+ 
+ img {
+  max-width: 500px;
+  max-height: auto;
+  border-radius: 30px;
+  
+ }
+
+
+.image{
+  margin: 10% 15% 15% 10%;
+}
+ 
+.text{
+  margin-left: 150px;
+  width: 400px;
+}
+
+.tomato{
+  height: auto;
+  width: 200px;
+  position: absolute;
+  right: 370px;
+  top: 400px;
+
+
+}
+
+.ravintola{
+  image-resolution: 400px;
+}
+
+#buffer{
+background-color: var(--dark-slate-gray);
+height: 100px;
+width:  100%;
+
+}
+
+
+/* Formi */
+
+.form-sub{
+ 
+}
+
+form.form-sub {
+  display: table;
+  
+}
+
+div.form-sub {
+  display: table-row;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+.form-sub input{
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  border-left: 7px solid black;
+  border-left-color:#7F7F7F;
+  transition:  border-left-color 1.5s;
+
+}
+.form-sub input:invalid{
+  border-left-color: orange;
+  opacity: 60%;
+}
+
+.form-sub input:valid{
+  border-left-color: green;
+  opacity: 60%;
+}

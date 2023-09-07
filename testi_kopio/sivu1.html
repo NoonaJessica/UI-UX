@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sivu1.css">
+    <link rel="stylesheet" href="sivu1_dialog.css">
+    <script src="sivu1.js" defer></script>
+    
+</head>
+<body>
+    <div class="header">
+        <a href="#default"  > <img id="pitsa" src="kuvat/logo-removebg-preview.png" alt="logo"></a>
+        <div class="col-1" class="header-right">
+
+
+          <a  id="etu" class="navi" class="active" href="#home">Etusivu</a>
+          <a id="ruoka" class="navi" href="#Menu">Ruokalista</a>
+          <a id="yhteys" class="navi" href="#contact">Yhteystiedot</a>
+          <a   href="#kirjaudu"> <button id="open_dialog">Kirjaudu</button></a>
+        </div>
+      </div>
+    <main class="filleri">
+      <p> Tänne lisätään sisältöä seuraavina viikkoina</p>
+      
+    <!--Dialog-->
+      <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
+        <img src="kuvat/logo-removebg-preview.png" alt="Illustration of Location Services" />
+        <h2 id="dialog_title" class="h2">Rekistöröi käyttäjä</h2>
+        <P>Minimi 3 merkkiä</P>
+        
+        <!--form-->
+        <form action="" method="get" class="form-sub">
+          <div class="form-sub">
+            <label for="name">Käyttäjä nimi: </label>
+            <input 
+            type="text" 
+            name="name" id="name" 
+            autocomplete="name" 
+            required minlength="3" 
+            />
+          </div>
+          <div class="form-sub">
+            <label for="email">Sähköposti: </label>
+            <input 
+            type="email" 
+            name="email" 
+            pattern=".+@metropolia.fi"
+            id="email" required  
+            autocomplete="email" 
+            required minlength="3"/>
+          </div>
+          <div class="form-sub">
+            <label for="password">Salasana: </label>
+            <input 
+            type="password" 
+            name="password" 
+            id="password" required  
+            required minlength="3"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}"
+            />
+          </div>
+          <!--
+          <div class="form-example">
+            <input type="submit" value="Subscribe!" />
+          </div>-->
+        </form>
+        <!--form-->
+
+        <div class="flex flex-space-between">
+          <button id="close_dialog">Sulje</button>
+          <button type="submit" value="lähetä!" id="confirm_dialog" class="cta" >Vahvista</button>
+        </div>
+      </dialog>
+    <!--Dialog-->
+    </main>
+    <div class="container">
+      <div class="image">
+        <img id="ravintola" src="kuvat/shawnanggg-nmpW_WwwVSc-unsplash.jpg">
+      </div>
+      <div class="text">
+        <h1>LISÄÄ MEISTÄ.</h1>
+        <h2> Tämä on miedän tarina</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellat soluta quaerat tenetur iusto laborum molestias, corporis facere! Placeat odit obcaecati iusto nesciunt fugiat nulla deleniti sui earum amet laudantium!</p>
+      </div>
+      <div> <img class="tomato" src="kuvat/pngwing.com.png" alt="tomaatti"></div>
+    </div>
+
+
+    <div id="buffer"></div>
+
+</body>
+</html>
