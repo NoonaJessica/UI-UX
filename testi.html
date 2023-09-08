@@ -3,92 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sivu1_dialog.css">
+    <script src="sivu1 copy.js" defer></script>
+
+    
     <title>Document</title>
 </head>
-<body>
+  <body>
 
-  <style>
-
-    /*desktop first*/
-    body {
-      background-color: lightgreen;
-
-    }
-
-    p{
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    h1{
-      font-size: 40px;
-
-    }
-    h2{
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-    }
-
-    
-    @media only screen and (max-width: 600px) {
-      body {
-        background-color: lightblue;
-      }
-      p{
-        color:bisque
-      }
-    }
-
-    @media only screen and (min-width: 800px) {
-      
-
-    }
-
-    @media only print and (max-width: 600px){
-      body{
-        background-color: white;
+    <div class="topnav" id="myTopnav">
+      <a class="active" id="logotaus" href="Logo"><img id="logo" src="kuvat/logo.png.png" alt="logo"></a>
+      <a href="#home" >Etusivu</a>
+      <a href="#news">Menu</a>
+      <a href="#contact">Yhteystiedot</a>
+      <a href="#login"><button id="open_dialog"><img id="login" src="kuvat/enter.png" alt="login"></button></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" >
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  <div class="header">
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
         
+        <div class="row"> <img class="column" id="ravintola" src="kuvat/shawnanggg-nmpW_WwwVSc-unsplash.jpg" alt="ravintola"> 
+          <img id="tomato" src="kuvat/tomato.png.png" alt="tomato">
+          <div class="column"> 
+            <h2 class="text">About us</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id 
+              cupiditate! Repellat dolores sunt aperiam officiis maxime. Minus laborum obcaecati repellat nesciunt animi 
+              deserunt, natus similique tempora cupiditate eligendi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              Aliquid, at. Nemo fuga quia voluptatibus accusantium. Dolorem animi provident officiis a error. Accusantium ab rerum eveniet. 
+              Totam ipsum neque reprehenderit quas?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+
+<!--Dialog-->
+<dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
+  <img src="kuvat/user.png" alt="Illustration of Location Services" />
+  <h2 id="dialog_title" class="h2">Rekistöröi käyttäjä</h2>
+  <P>Minimi 3 merkkiä</P>
+  
+  <!--form-->
+  <form action="" method="get" class="form-sub">
+    <div class="form-sub">
+      <label for="name">Käyttäjä nimi: </label>
+      <input 
+      type="text" 
+      name="name" id="name" 
+      autocomplete="name" 
+      required minlength="3" 
+      />
+    </div>
+    <div class="form-sub">
+      <label for="email">Sähköposti: </label>
+      <input 
+      type="email" 
+      name="email" 
+      pattern=".+@metropolia.fi"
+      id="email" required  
+      autocomplete="email" 
+      required minlength="3"/>
+    </div>
+    <div class="form-sub">
+      <label for="password">Salasana: </label>
+      <input 
+      type="password" 
+      name="password" 
+      id="password" required  
+      required minlength="3"
+      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}"
+      />
+    </div>
+    <!--</div>-->
+  </form>
+  <!--form-->
+
+  <div class="flex flex-space-between">
+    <button id="close_dialog">Sulje</button>
+    
+    <button type="submit" value="lähetä!" id="confirm_dialog" >Vahvista</button>
+  </div>
+</dialog>
+<!--Dialog-->
+
+
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-      h1{
-          font-size: 50px;
-        }
     }
-
-  #isopizza{
-    width: 100%;
+    </script>
     
-  }
-  #taustaimg{
-    width: 700px;
-    height: 400px;
-    background-color: black;
-    background-image: url("kuvat/pizza-seamless-pattern_373337-10.png");
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: 10% 50%;
-  }
-
-    </style>
-    </head>
-    <body>
-      <h1>otsikko H1</h1>
-      <h2> matti meikäläinen H2 </h2>
-
-      <img id="isopizza" src="kuvat/nik-owens-40OJLYVWeeM-unsplash.jpg" alt="isopizza">
-    
-    <p>Lorem, ipsum dolor sit amet consectetur 
-      adipisicing elit. Odit, dolore. 
-      Aliquam ratione molestiae, 
-      doloremque minus nostrum ipsam explicabo? 
-      Debitis esse ducimus natus iste, 
-      repellendus in id doloremque assumenda
-       rerum illo!Resize the browser window. 
-       When the width of this document 
-      is 600 pixels or less, the background-color 
-      is "lightblue", otherwise it is "lightgreen".</p>
-    <h2>Taustakuva</h2>
-
-    <div  id="taustaimg"></div>
-
+  
+  </body>
+  </html>
 </body>
 </html>
 

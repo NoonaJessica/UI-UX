@@ -33,11 +33,12 @@ button {
   
   #open_dialog {
     margin: 0 auto;
+    
   }
   
   dialog {
     border: none !important;
-    border-radius: calc(5px * var(--ratio));
+    border-radius: 20px;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     padding: 1.6rem;
     max-width: 400px;
@@ -75,5 +76,5 @@ button {
   }
   
   .flex button {
-    margin: 8px auto;
+    margin: 5px auto;
   }
